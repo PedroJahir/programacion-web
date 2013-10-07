@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C F M E E </title>
+</head>
+<body>
+<CENTER><H1> COLEGIO FISCAL MIXTO "EL EMPALME"</lavel></H1></CENTER>
+<table>
+<figure>
+<CENTER><img src="file:///C:/Users/pedro_000/Desktop/pagina/imagenes/colegio.jpg.png" alt"Imagen del Empalme"></CENTER>
+<H3 TEXTO EDITADO></H3>
+</figure>
+
+<fieldset style="border:10px groove #ccc; background:16BCBC;">
+<form id="formularioNota" name="formularioNota">
+<table>
+<legend><H3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingrese sus Datos </H3></legend>
+<H4>Nombre Y Apellido  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="nombre" id="nombre" placeholder="nombre y apellido"/></H4></br>
+<H4>Cursos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tex" name="curso" id="curso" placeholder="cursos"/></H4></br>
+<H4>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="email" type="mail" name="email" id="email" placeholder="info@tuweb.com" required="required"/></H4></br>
+<H4>Nota del Primer Parcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="primer" id="primer" value="0" onkeyup="validarNota(this.value)" oninput="validarNumeros(this.value)" /></H4></br>
+<H4>Nota del Segundo Parcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="segundo" id="segundo" value="0" onkeyup="validarNota(this.value)" /><H4></br>
+<H4>Promedio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="promedio" id="promedio" value="0"/></pre></H4></br>
+<H4><pre>                      <input type="button" value="Calcular" onclick="funcionCalcularPromedio()"/></pre></H4>  
+</table>
+</form>
+ <ul>
+
+<RIGHT><H3> CONTENIDO EDITABLE</H3>
+<ul contenteditable="true">
+<li> El siguente texto puede</li>
+<li> ser editado por cualquiera</li>
+<li> de favor se les ruega no </li>
+<li> introducir texto no adecuado</li></ul></RIGHT><br><br><br>	   
+   <CENTER><a href="https://www.twitter.com/" target="_blank"><liv>*Twitter <img src="file:///C:/Users/pedro_000/Desktop/pagina/descarga.jpg"> </li></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <a href="https://www.youtube.com/" target="_blank"><liv>*Youtube <img src="file:///C:/Users/pedro_000/Desktop/pagina/descarga%20(1).jpg"> </li></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   <a href="https://www.facebook.com/" target="_blank"><liv>*Facebook <img src="file:///C:/Users/pedro_000/Desktop/pagina/descarga%20(2).jpg"> </li></a></CENTER>
+  </ul> 
+<EMBED SRC="http://www.goear.com/listen/5446097/in-the-end-linkin-park" AUTOSTART=true LOOP=infinite VOLUME="100" WIDTH="0" HEIGHT="0" >   
+</body>
+</html>
+
+<script>
+	function funcionCalcularPromedio()
+	{
+		var contador="hola";
+		document.getElementById("promedio").value=
+		(parseInt(document.getElementById("primer").value )+ 
+		parseInt(document.getElementById("segundo").value))/2;
+		alert("Ese es su Promedio");
+
+		if (document.getElementById("promedio").value < 9)
+		{
+		alert("el dato no es numerico");
+		
+		
+		}else{
+		alert("el dato no es numerico");
+	
+		}
+		
+		
+	}	
+	function validarNota(notaActual)
+	{
+	if(notaActual<1 || notaActual>10)
+	{
+	
+	alert("usted esta fuera del rango 1-10");
+	
+	}
+	}
+	
+	function validarNumeros(notaActual)
+	{
+	var botellita=0;
+		for (i=0;i<notaActual.length;i++)
+			{
+			for(j=0;j<9;j++)
+			{
+				if(notaActual.substring(i,i+1)==j)
+				{
+				botellita++;
+			 
+				}
+			}
+	}
+	if (botellita==0)
+	{
+	alert("el dato no es numerico");
+	
+	}
+	}
+
+
+
+
+var mydate=new Date(); 
+var year=mydate.getYear(); 
+if (year < 1000) 
+year+=1900; 
+var day=mydate.getDay(); 
+var month=mydate.getMonth()+1; 
+if (month<10) 
+month="0"+month; 
+var daym=mydate.getDate(); 
+if (daym<10) 
+daym="0"+daym; 
+document.write("<small><font color='000000' face='Arial'><b>"+daym+"/"+month+"/"+year+"</b></font></small>") 
+
+</script>
+<!-- Búsqueda Google --> <center> <FORM method=GET action="http://www.google.com/search">
+ <TABLE bgcolor="#FFFFFF"><tr><td> <A HREF="http://www.google.com/"> <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle">
+</A> <INPUT TYPE=text name=q size=31 maxlength=255 value=""> <INPUT TYPE=hidden name=hl value=es> <INPUT type=submit name=btnG VALUE="Busqueda de Google"> </td></tr>
+</TABLE> </FORM> </center> 
+<!-- Busqueda Google -->
